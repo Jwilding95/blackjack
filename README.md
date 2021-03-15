@@ -3,7 +3,7 @@
 
 ## TODO
 
-[x] Create cards and generate deck
+ - [x] Create cards and generate deck
 
 ### Gameplay functions: 
  - [x] Shuffle 
