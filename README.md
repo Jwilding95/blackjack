@@ -15,7 +15,7 @@
  - [ ] Place Bets
 
 ### Conditional functions:
- - [ ] Soft Values
+ - [x] Soft Values
  - [ ] Blackjack
  - [ ] Player Wins
  - [ ] Dealer Wins

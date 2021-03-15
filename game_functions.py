@@ -8,10 +8,10 @@ class Card:
         self.rank = rank,
         self.suit = suit,
         self.value = value
-
+        
 values = {"2":2, "3":3, "4":4, "5":5, "6":6, "7":7, "8":8, "9":9, "10":10, "J":10, "Q":10, "K":10, "A":11}
 
-suits = ["\u2667", "\u2665", "\u2664", "\u2666"]
+suits = ["\u2664", "\u2665", "\u2666", "\u2667"]
 
 deck = []
 
@@ -61,7 +61,10 @@ def deal():
     
     setup_ui(user["bank"], dealer_hand, player_hand, dealer_hand_total, player_hand_total, default_table_message)
     player_hand.append(shoe.pop())
-    player_hand_total += player_hand[-1].value
+    if player_hand[0].value==11 and player_hand[1].value==11:
+        player_hand_total += 1
+    else:
+        player_hand_total += player_hand[1].value
 
     setup_ui(user["bank"], dealer_hand, player_hand, dealer_hand_total, player_hand_total, default_table_message)
     dealer_hand.append(shoe.pop())
@@ -89,11 +92,13 @@ def dealer_turn():
 
 def hit():
     global player_hand_total
-    player_hand.append(shoe.pop())
-    player_hand_total += player_hand[-1].value
-    for card in player_hand:
-        if player_hand_total > 21 and card.value == 11:
-            card.value = 1
+    card = shoe.pop()
+    if card.value == 11 and player_hand_total > 10:
+        player_hand.append(card)
+        player_hand_total += 1
+    else:
+        player_hand.append(card)
+        player_hand_total += player_hand[-1].value
     if player_hand_total > 21:
         player_bust()
     else:
@@ -170,11 +175,12 @@ def player_input_validation(valid_inputs, ui):
 # ==== GET USER INPUT ====
 
 def first_turn():
+    global player_hand_total
     first_turn_ui(user["bank"], dealer_hand, player_hand, dealer_hand_total, player_hand_total, default_table_message)
     if player_hand_total == 21:
         blackjack()
     valid_inputs=[1, 2, 3]
-    if player_hand[0].value==player_hand[1].value:
+    if player_hand[0].value == player_hand[1].value:
         valid_inputs=[1, 2, 3, 4]
     player_input=player_input_validation(valid_inputs, first_turn_ui)
     if player_input == 1:
@@ -185,3 +191,7 @@ def first_turn():
         double()
     if player_input == 4:
         split()
+
+shuffle()
+deal()
+first_turn()
