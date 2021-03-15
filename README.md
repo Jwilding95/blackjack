@@ -29,9 +29,12 @@
  - [ ] Insurance
  - [ ] Surrender
 
- - [ ] Game UI
-
+### Further TODO:
  - [ ] Running game with validation
+
+ - [ ] Testing
+
+ - [ ] Game UI
 
  - [ ] Menu UI
 
