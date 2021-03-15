@@ -3,7 +3,9 @@
 
 ## TODO
 
- - [x] Create cards and generate deck
+### Default game state
+ - [x] Create cards 
+ - [x] Generate randomized deck/shoe
 
 ### Gameplay functions: 
  - [x] Shuffle 
