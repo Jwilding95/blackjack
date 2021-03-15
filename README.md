@@ -5,11 +5,29 @@
 
  - [x] Create cards and generate deck
 
- - [ ] Gameplay functions: (Shuffle [x], Deal [x], Hit [x], Stand [x], Place Bets [ ])
+ - [ ] Gameplay functions: 
+ - [x] Shuffle 
+ - [x] Deal
+ - [x] Hit
+ - [x] Stand 
+ - [ ] Place Bets
 
- - [ ] Conditional functions: (Blackjack [ ], Player Wins [ ], Dealer Wins [ ], Player Busts [ ], Dealer Turn [ ], Dealer Busts [ ], Push [ ], Discard Pile [ ])
+ - [ ] Conditional functions:
+ - [ ]Soft Values
+ - [ ]Blackjack
+ - [ ]Player Wins
+ - [ ]Dealer Wins
+ - [ ]Player Bust 
+ - [ ]Dealer Turn
+ - [ ]Dealer Bust 
+ - [ ]Push
+ - [ ]Discard Pil
 
- - [ ] Advanced functions (Double [x], Split [ ])
+ - [ ] Advanced functions
+ - [x] Double
+ - [ ] Split
+ - [ ] Insurance
+ - [ ] Surrender
 
  - [ ] Game UI
 
