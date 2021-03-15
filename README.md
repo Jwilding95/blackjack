@@ -21,7 +21,7 @@
  - [ ] Dealer Turn
  - [ ] Dealer Bust 
  - [ ] Push
- - [ ] Discard Pil
+ - [ ] Discard Pile
 
 ### Advanced functions:
  - [x] Double
