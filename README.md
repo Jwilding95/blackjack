@@ -3,38 +3,38 @@
 
 ## TODO
 
-### - [x] Create cards and generate deck
+[x] Create cards and generate deck
 
-### - [ ] Gameplay functions: 
+### Gameplay functions: 
  - [x] Shuffle 
  - [x] Deal
  - [x] Hit
  - [x] Stand 
  - [ ] Place Bets
 
-### - [ ] Conditional functions:
- - [ ]Soft Values
- - [ ]Blackjack
- - [ ]Player Wins
- - [ ]Dealer Wins
- - [ ]Player Bust 
- - [ ]Dealer Turn
- - [ ]Dealer Bust 
- - [ ]Push
- - [ ]Discard Pil
+### Conditional functions:
+ - [ ] Soft Values
+ - [ ] Blackjack
+ - [ ] Player Wins
+ - [ ] Dealer Wins
+ - [ ] Player Bust 
+ - [ ] Dealer Turn
+ - [ ] Dealer Bust 
+ - [ ] Push
+ - [ ] Discard Pil
 
-### - [ ] Advanced functions:
+### Advanced functions:
  - [x] Double
  - [ ] Split
  - [ ] Insurance
  - [ ] Surrender
 
-### - [ ] Game UI
+ - [ ] Game UI
 
-### - [ ] Running game with validation
+ - [ ] Running game with validation
 
-### - [ ] Menu UI
+ - [ ] Menu UI
 
-### - [ ] Account creation and data persistence
+ - [ ] Account creation and data persistence
 
-### - [ ] Track game history and stats
+ - [ ] Track game history and stats
