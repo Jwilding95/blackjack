@@ -37,6 +37,8 @@ player_hand2 = []
 dealer_hand_total = 0
 player_hand_total = 0
 
+discard_pile = []
+
 # ==== CREATE TABLE FOR PLAY & TRACK NEW VALUES ====
 
 for card in player_hand:
@@ -89,6 +91,9 @@ def hit():
     global player_hand_total
     player_hand.append(shoe.pop())
     player_hand_total += player_hand[-1].value
+    for card in player_hand:
+        if player_hand_total > 21 and card.value == 11:
+            card.value = 1
     if player_hand_total > 21:
         player_bust()
     else:
